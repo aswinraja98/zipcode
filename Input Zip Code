@@ -1,0 +1,22 @@
+import pgeocode
+data = pgeocode.Nominatim('In')
+code = input('Enter the zip code')
+zip = (data.query_postal_code(code))
+print(zip)
+
+Output: 
+
+Enter the zip code600025
+postal_code                              600025
+country_code                                 IN
+place_name        Engineering College (Chennai)
+state_name                           Tamil Nadu
+state_code                                   25
+county_name                             Chennai
+county_code                               603.0
+community_name         Chennai City Corporation
+community_code                              NaN
+latitude                                13.0484
+longitude                               80.2473
+accuracy                                      1
+Name: 0, dtype: object
